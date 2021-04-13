@@ -31,6 +31,8 @@ public class DexHeader {
 		if (endianTag != DexConsts.ENDIAN_CONSTANT) {
 			throw new DexException("Unexpected endian tag: 0x" + Integer.toHexString(endianTag));
 		}
+		//TODO : Remove unused variable
+		//FIXME : linkSize, linkOff, stringIdsSize was not used, hence can be deleted
 		int linkSize = buf.readInt();
 		int linkOff = buf.readInt();
 		int mapListOff = buf.readInt();
