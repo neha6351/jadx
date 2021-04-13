@@ -20,6 +20,8 @@ public class TestTryAfterDeclaration extends IntegrationTest {
 			InputStream bis = null;
 			try {
 				bis = new FileInputStream("1.txt");
+				//TODO : This loop doesn't seem to have a way to terminate (other than by perhaps throwing an exception).
+				//FIXME : Remove the loop
 				while (bis != null) {
 					System.out.println("c");
 				}
