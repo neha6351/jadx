@@ -16,9 +16,8 @@ public class TestTernaryInIf2 extends SmaliTest {
 		private String a = "a";
 		private String b = "b";
 
-		//TODO: Change equals method
-		//FIXME: Equals method takes object type as argument.
-		public boolean equals(TestCls other) {
+		public boolean equals(Object obj) {
+			TestCls other = (TestCls) obj;
 			if (this.a == null ? other.a == null : this.a.equals(other.a)) {
 				if (this.b == null ? other.b == null : this.b.equals(other.b)) {
 					return true;
