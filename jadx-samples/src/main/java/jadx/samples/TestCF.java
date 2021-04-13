@@ -158,10 +158,7 @@ public class TestCF extends AbstractTest {
 			a.trim();
 			a.length();
 		}
-		a = new String("22");
-		//TODO : The lowercase is not stored in any object. Can be removed.
-		//FIXME : Remove the a.tolowerCase()
-		a.toLowerCase();
+		a = "22";
 		return a.length();
 	}
 
