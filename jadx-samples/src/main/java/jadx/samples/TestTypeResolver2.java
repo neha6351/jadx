@@ -18,9 +18,8 @@ public class TestTypeResolver2 extends AbstractTest {
 			doPrint(s1);
 			doPrint(s2);
 			s1 = "is";
-			//TODO: Parsing a object will be appropriate.
-			//FIXME: Use s2.parseInt()
-			s2 = new Integer(42);
+			int temp = 42;
+			s2 = temp;
 		}
 	}
 
