@@ -360,7 +360,10 @@ public final class DebugController implements SmaliDebugger.SuspendListener, IDe
 					&& info.getMethodID() == cur.frame.getMthID()) {
 
 				refreshLevel = 1; // relevant registers or fields.
-			} else {
+			}
+			//TODO : Remove redundant else condition; cur.frame if is null cur.frame.getClsID() would throw a Null pointer exception.
+			//FIXME : Remove The else condition.
+			else {
 				cur.frame.getClsID();
 			}
 			setRegsNotUpdated();
