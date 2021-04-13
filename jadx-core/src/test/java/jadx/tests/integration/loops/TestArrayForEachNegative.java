@@ -37,9 +37,7 @@ public class TestArrayForEachNegative extends IntegrationTest {
 				sum += a[i];
 			}
 			int j = 0;
-			//TODO : The condition for the loop does not control the iteration, can lead to infinite loop.
-			//FIXME : Fix the i increment.
-			for (int i = 0; i < a.length; j++) {
+			for (int i = 0; i < a.length; i++,j++) {
 				sum += a[j];
 			}
 			return sum;
