@@ -26,6 +26,8 @@ public class TestWrongCode2 extends IntegrationTest {
 		@SuppressWarnings({ "ConstantConditions", "SynchronizationOnLocalVariableOrMethodParameter" })
 		public boolean test3() {
 			A a = null;
+			//TODO : As a is null, having a lock on this object will throw an exception.
+			//FIXME : Remove synchronization on null object.
 			synchronized (a) {
 				return true;
 			}
