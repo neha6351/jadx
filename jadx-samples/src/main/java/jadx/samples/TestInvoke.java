@@ -33,6 +33,8 @@ public class TestInvoke extends AbstractTest {
 	private String testVarArgs2(char[]... args) {
 		String s = "";
 		for (char[] ca : args) {
+			//TODO : String class works different that normal operators, use conact instead
+			//FIXME : Use of  String.concat()
 			s += new String(ca);
 		}
 		return s;
