@@ -86,18 +86,6 @@ public class TestCF2 extends AbstractTest {
 		return i;
 	}
 
-	//TODO : Remove test method as not used. Also the do while loop is useless as there is no operation is covered under the loop.
-	//FIXME : Remove doWhileReturn2 method.
-	public void doWhileReturn2(boolean k) throws InterruptedException {
-		int i = 3;
-		do {
-			if (k) {
-				return;
-			}
-			i++;
-		} while (i < 5);
-	}
-
 	public void whileIterator(String[] args, int k) throws InterruptedException {
 		for (String arg : args) {
 			if (arg.length() > 9) {
